@@ -60,15 +60,15 @@ class w6d5_ui_performance_testingUITests: XCTestCase {
 
        
         showDetail(name: "Burger", calories: "300")
+
         XCTAssert(app.staticTexts["detailViewControllerLabel"].label == "Burger - 300")
  
         app.navigationBars["Detail"].buttons["Master"].tap()
         
-        
     }
     
     func showDetail(name: String, calories: String) {
-        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["titleLabel"]/*[[".cells[\"title\"]",".staticTexts[\"title\"]",".staticTexts[\"titleLabel\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["titleLabel"]/*[[".cells[\"title\"]",".staticTexts[\"title\"]",".staticTexts[\"titleLabel\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         
 
 
